@@ -36,7 +36,10 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 1
         //return id.count
     }
+    func test()
+    {
     
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell") as! MainCell
