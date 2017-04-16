@@ -18,6 +18,9 @@
 		020D7AE01E98D223005BC9CB /* manageKhuVucController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D7ADF1E98D223005BC9CB /* manageKhuVucController.swift */; };
 		020D7AE21E98D299005BC9CB /* ManageKVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D7AE11E98D299005BC9CB /* ManageKVCell.swift */; };
 		020D7AE41E98D6D0005BC9CB /* manageDetailKhuVucController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D7AE31E98D6D0005BC9CB /* manageDetailKhuVucController.swift */; };
+		483A2E1D1EA324C200767AD3 /* manageMonAnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A2E1C1EA324C200767AD3 /* manageMonAnController.swift */; };
+		483A2E1F1EA3339F00767AD3 /* ManageMonAnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A2E1E1EA3339F00767AD3 /* ManageMonAnCell.swift */; };
+		483A2E231EA3344500767AD3 /* manageDetailMonAnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A2E221EA3344500767AD3 /* manageDetailMonAnController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		020D7ADF1E98D223005BC9CB /* manageKhuVucController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageKhuVucController.swift; sourceTree = "<group>"; };
 		020D7AE11E98D299005BC9CB /* ManageKVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageKVCell.swift; sourceTree = "<group>"; };
 		020D7AE31E98D6D0005BC9CB /* manageDetailKhuVucController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageDetailKhuVucController.swift; sourceTree = "<group>"; };
+		483A2E1C1EA324C200767AD3 /* manageMonAnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageMonAnController.swift; sourceTree = "<group>"; };
+		483A2E1E1EA3339F00767AD3 /* ManageMonAnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageMonAnCell.swift; sourceTree = "<group>"; };
+		483A2E221EA3344500767AD3 /* manageDetailMonAnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageDetailMonAnController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		020D7ACF1E98AC27005BC9CB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				483A2E1B1EA3238E00767AD3 /* MonAnController */,
 				020D7ADE1E98D1FD005BC9CB /* KhuVucController */,
 				020D7ADA1E98CABB005BC9CB /* MainController.swift */,
 				020D7ADC1E98CCFB005BC9CB /* MainCell.swift */,
@@ -139,6 +146,16 @@
 				020D7AE31E98D6D0005BC9CB /* manageDetailKhuVucController.swift */,
 			);
 			path = KhuVucController;
+			sourceTree = "<group>";
+		};
+		483A2E1B1EA3238E00767AD3 /* MonAnController */ = {
+			isa = PBXGroup;
+			children = (
+				483A2E1C1EA324C200767AD3 /* manageMonAnController.swift */,
+				483A2E1E1EA3339F00767AD3 /* ManageMonAnCell.swift */,
+				483A2E221EA3344500767AD3 /* manageDetailMonAnController.swift */,
+			);
+			name = MonAnController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +234,12 @@
 				020D7AE21E98D299005BC9CB /* ManageKVCell.swift in Sources */,
 				020D7ADB1E98CABB005BC9CB /* MainController.swift in Sources */,
 				020D7ADD1E98CCFB005BC9CB /* MainCell.swift in Sources */,
+				483A2E1F1EA3339F00767AD3 /* ManageMonAnCell.swift in Sources */,
+				483A2E1D1EA324C200767AD3 /* manageMonAnController.swift in Sources */,
 				020D7AE01E98D223005BC9CB /* manageKhuVucController.swift in Sources */,
 				020D7AE41E98D6D0005BC9CB /* manageDetailKhuVucController.swift in Sources */,
 				020D7AD91E98C859005BC9CB /* DB.swift in Sources */,
+				483A2E231EA3344500767AD3 /* manageDetailMonAnController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
