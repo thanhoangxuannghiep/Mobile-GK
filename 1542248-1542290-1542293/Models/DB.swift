@@ -43,8 +43,8 @@ extension UIViewController {
     }
     
     func createTable_KhuVuc(database : OpaquePointer?){
-        let query = "create table KhuVuc(id integer primary key autoincrement, ten_khu_vuc nvarchar(50), mo_ta nvarchar(200), hinhURL string)"
-        //let query = "drop table Grade"
+        let query = "create table KhuVuc(id integer primary key autoincrement, ten_khu_vuc nvarchar(50), mo_ta nvarchar(200), hinhURL text)"
+        //let query = "drop table khuvuc"
         var statement : OpaquePointer?
         if sqlite3_prepare_v2(database, query, -1, &statement, nil) == SQLITE_OK{
             if(sqlite3_step(statement) == SQLITE_DONE){
@@ -60,7 +60,9 @@ extension UIViewController {
     }
     
     func createTable_BanAn(database : OpaquePointer?){
-        let query = "create table BanAn(id integer primary key autoincrement, hinhURL string, id_kv integer, status bool)"
+        //0 is Available, 1 is using, 2 is orderd
+        let query = "create table BanAn(id integer primary key autoincrement, so_ban_an integer, mo_ta_ban_an nvarchar(50), hinhURL text, id_kv integer, status integer)"
+//        let query = "drop table banan"
         var statement : OpaquePointer?
         if sqlite3_prepare_v2(database, query, -1, &statement, nil) == SQLITE_OK{
             if(sqlite3_step(statement) == SQLITE_DONE){
@@ -107,23 +109,6 @@ extension UIViewController {
         }
     }
     
-    func insert(database: OpaquePointer?, query: String?) -> Bool{
-        var insertStatement : OpaquePointer?
-        if sqlite3_prepare_v2(database, query, -1, &insertStatement, nil) == SQLITE_OK{
-            if sqlite3_step(insertStatement) == SQLITE_DONE{
-                print("Inserted")
-                return true
-            }else{
-                print("Failed")
-                return false
-            }
-        }else{
-            let errmsg = String(cString: sqlite3_errmsg(database))
-            print(errmsg)
-            return false
-        }
-    }
-    
     func getData(database: OpaquePointer?, query: String?) -> OpaquePointer?{
         var selectStatement : OpaquePointer?
         if sqlite3_prepare_v2(database, query, -1, &selectStatement, nil) == SQLITE_OK{
@@ -132,23 +117,6 @@ extension UIViewController {
             let errmsg = String(cString: sqlite3_errmsg(database))
             print(errmsg)
             return nil
-        }
-    }
-    func update(database: OpaquePointer?, query: String?) -> Bool{
-        var updateStatement : OpaquePointer?
-        if sqlite3_prepare_v2(database, query, -1, &updateStatement, nil) == SQLITE_OK{
-            if(sqlite3_step(updateStatement) == SQLITE_DONE){
-                print("updated!")
-                return true
-            }else{
-                let errmsg = String(cString: sqlite3_errmsg(database))
-                print(errmsg)
-                return false
-            }
-        }else{
-            let errmsg = String(cString: sqlite3_errmsg(database))
-            print(errmsg)
-            return false
         }
     }
     func delete(database: OpaquePointer?, query: String?)-> Bool{

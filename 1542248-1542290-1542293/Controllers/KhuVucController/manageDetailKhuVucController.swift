@@ -7,33 +7,59 @@
 //
 
 import UIKit
-
+//protocol AddDetailKhuVucDelegate {
+//    func AddKV(kv: KhuVuc)
+//}
 class manageDetailKhuVucController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imgKV: UIImageView!
     @IBOutlet weak var txtMoTaKV: UITextView!
     @IBOutlet weak var txtTenKV: UITextField!
     let imagePicker = UIImagePickerController()
+    
+    var database : OpaquePointer?
+    var imagesDirectoryPath: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        database = createDB()
+        createTable_KhuVuc(database: database)
+        imagesDirectoryPath = createFolder_Image(folder_name: "ImageKhuVuc")
+        
         let saveKV = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addKV))
         self.navigationItem.setRightBarButton(saveKV, animated: true)
+        
         imagePicker.delegate = self
     }
-    @IBAction func addImageKV(_ sender: Any) {
+    @IBAction func addImageKV(_ sender: UIButton) {
         present(imagePicker, animated: true)
     }
     func addKV(){
-    
+        var imgName_temp = randomStringWithLength(len: 6) as String
+        imgName_temp = (imgName_temp as String) + ".jpg"
+        let data = UIImageJPEGRepresentation(img, 1.0)
+        let imagePath = imagesDirectoryPath! + "/\(imgName_temp as String)"
+        
+        let ten = txtTenKV.text!
+        let mota = txtMoTaKV.text!
+        let kv = KhuVuc()
+        kv.tenKV = ten
+        kv.motaKV = mota
+        kv.hinhURL = imagePath
+        let query = "INSERT INTO KhuVuc (ten_khu_vuc, mo_ta, hinhURL) VALUES (?, ?, ?)"
+        if kv.insert(database: database, query: query, kv:kv){
+            _ = FileManager.default.createFile(atPath: imagePath, contents: data, attributes: nil)
+            alert(title: "Success", message: "Area has been added!") { _ in
+                _ = self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
-    var imgPath: UIImage?
+    var img = UIImage()
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        dismiss(animated: true)
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            imgPath = pickedImage // Đưa vào hàng đợi để lưu
-            imgKV.image = pickedImage
-            print(imgPath?.accessibilityValue)
-            //image.data = UIImageJPEGRepresentation(selectedImage, 1) as NSData?
+            img = pickedImage // Đưa vào hàng đợi để lưu
+            imgKV.image = img
+            dismiss(animated: true)
         }
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

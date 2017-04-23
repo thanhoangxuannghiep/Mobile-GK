@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02091DD41EA49F7100A4F4A2 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091DD31EA49F7100A4F4A2 /* ImageHelper.swift */; };
+		02091DD61EA4A6AB00A4F4A2 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091DD51EA4A6AB00A4F4A2 /* UIExtension.swift */; };
 		020D7ABE1E989270005BC9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D7ABD1E989270005BC9CB /* AppDelegate.swift */; };
 		020D7AC31E989270005BC9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020D7AC11E989270005BC9CB /* Main.storyboard */; };
 		020D7AC51E989270005BC9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020D7AC41E989270005BC9CB /* Assets.xcassets */; };
@@ -18,12 +20,21 @@
 		020D7AE01E98D223005BC9CB /* manageKhuVucController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D7ADF1E98D223005BC9CB /* manageKhuVucController.swift */; };
 		020D7AE21E98D299005BC9CB /* ManageKVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D7AE11E98D299005BC9CB /* ManageKVCell.swift */; };
 		020D7AE41E98D6D0005BC9CB /* manageDetailKhuVucController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D7AE31E98D6D0005BC9CB /* manageDetailKhuVucController.swift */; };
-		483A2E1D1EA324C200767AD3 /* manageMonAnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A2E1C1EA324C200767AD3 /* manageMonAnController.swift */; };
-		483A2E1F1EA3339F00767AD3 /* ManageMonAnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A2E1E1EA3339F00767AD3 /* ManageMonAnCell.swift */; };
-		483A2E231EA3344500767AD3 /* manageDetailMonAnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A2E221EA3344500767AD3 /* manageDetailMonAnController.swift */; };
+		023B74CC1EA6323F00B80505 /* imageUpload in Resources */ = {isa = PBXBuildFile; fileRef = 023B74CB1EA6323E00B80505 /* imageUpload */; };
+		023B74CE1EA64E4100B80505 /* manageEditKhuVucController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74CD1EA64E4100B80505 /* manageEditKhuVucController.swift */; };
+		023B74D01EA68C9D00B80505 /* KhuVucOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74CF1EA68C9D00B80505 /* KhuVucOperators.swift */; };
+		023B74D31EA6976400B80505 /* ManageBanAnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74D21EA6976400B80505 /* ManageBanAnCell.swift */; };
+		023B74D51EA6979000B80505 /* manageBanAnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74D41EA6979000B80505 /* manageBanAnController.swift */; };
+		023B74DC1EA69B3000B80505 /* BanAnProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74DB1EA69B3000B80505 /* BanAnProperties.swift */; };
+		023B74DE1EA69B4100B80505 /* BanAnOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74DD1EA69B4100B80505 /* BanAnOperators.swift */; };
+		023B74E01EA773AE00B80505 /* manageDetailBanAnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74DF1EA773AE00B80505 /* manageDetailBanAnController.swift */; };
+		023B74E21EA7866100B80505 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B74E11EA7866100B80505 /* RadioButton.swift */; };
+		02B435ED1EA5CF87000371B4 /* KhuVucProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B435EC1EA5CF87000371B4 /* KhuVucProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02091DD31EA49F7100A4F4A2 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		02091DD51EA4A6AB00A4F4A2 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		020D7ABA1E989270005BC9CB /* 1542248-1542290-1542293.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1542248-1542290-1542293.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		020D7ABD1E989270005BC9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		020D7AC21E989270005BC9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,9 +49,16 @@
 		020D7ADF1E98D223005BC9CB /* manageKhuVucController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageKhuVucController.swift; sourceTree = "<group>"; };
 		020D7AE11E98D299005BC9CB /* ManageKVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageKVCell.swift; sourceTree = "<group>"; };
 		020D7AE31E98D6D0005BC9CB /* manageDetailKhuVucController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageDetailKhuVucController.swift; sourceTree = "<group>"; };
-		483A2E1C1EA324C200767AD3 /* manageMonAnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageMonAnController.swift; sourceTree = "<group>"; };
-		483A2E1E1EA3339F00767AD3 /* ManageMonAnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageMonAnCell.swift; sourceTree = "<group>"; };
-		483A2E221EA3344500767AD3 /* manageDetailMonAnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageDetailMonAnController.swift; sourceTree = "<group>"; };
+		023B74CB1EA6323E00B80505 /* imageUpload */ = {isa = PBXFileReference; lastKnownFileType = folder; path = imageUpload; sourceTree = "<group>"; };
+		023B74CD1EA64E4100B80505 /* manageEditKhuVucController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageEditKhuVucController.swift; sourceTree = "<group>"; };
+		023B74CF1EA68C9D00B80505 /* KhuVucOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhuVucOperators.swift; sourceTree = "<group>"; };
+		023B74D21EA6976400B80505 /* ManageBanAnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageBanAnCell.swift; sourceTree = "<group>"; };
+		023B74D41EA6979000B80505 /* manageBanAnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageBanAnController.swift; sourceTree = "<group>"; };
+		023B74DB1EA69B3000B80505 /* BanAnProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanAnProperties.swift; sourceTree = "<group>"; };
+		023B74DD1EA69B4100B80505 /* BanAnOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanAnOperators.swift; sourceTree = "<group>"; };
+		023B74DF1EA773AE00B80505 /* manageDetailBanAnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageDetailBanAnController.swift; sourceTree = "<group>"; };
+		023B74E11EA7866100B80505 /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		02B435EC1EA5CF87000371B4 /* KhuVucProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhuVucProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,7 @@
 				020D7AD21E98AC27005BC9CB /* Resources */,
 				020D7AD31E98AC27005BC9CB /* Views */,
 				020D7ABD1E989270005BC9CB /* AppDelegate.swift */,
+				023B74CB1EA6323E00B80505 /* imageUpload */,
 				020D7AC91E989270005BC9CB /* Info.plist */,
 			);
 			path = "1542248-1542290-1542293";
@@ -89,7 +108,8 @@
 		020D7ACF1E98AC27005BC9CB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				483A2E1B1EA3238E00767AD3 /* MonAnController */,
+				023B74D11EA6974300B80505 /* BanAnController */,
+				02B435EA1EA5CE2D000371B4 /* MonAnController */,
 				020D7ADE1E98D1FD005BC9CB /* KhuVucController */,
 				020D7ADA1E98CABB005BC9CB /* MainController.swift */,
 				020D7ADC1E98CCFB005BC9CB /* MainCell.swift */,
@@ -100,6 +120,9 @@
 		020D7AD01E98AC27005BC9CB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				02091DD31EA49F7100A4F4A2 /* ImageHelper.swift */,
+				02091DD51EA4A6AB00A4F4A2 /* UIExtension.swift */,
+				023B74E11EA7866100B80505 /* RadioButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -107,6 +130,8 @@
 		020D7AD11E98AC27005BC9CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				023B74DA1EA69B1E00B80505 /* BanAnModel */,
+				02B435EB1EA5CF71000371B4 /* KhuVucModel */,
 				020D7AD71E98C7B1005BC9CB /* Briding_Header.h */,
 				020D7AD81E98C859005BC9CB /* DB.swift */,
 			);
@@ -144,18 +169,44 @@
 				020D7ADF1E98D223005BC9CB /* manageKhuVucController.swift */,
 				020D7AE11E98D299005BC9CB /* ManageKVCell.swift */,
 				020D7AE31E98D6D0005BC9CB /* manageDetailKhuVucController.swift */,
+				023B74CD1EA64E4100B80505 /* manageEditKhuVucController.swift */,
 			);
 			path = KhuVucController;
 			sourceTree = "<group>";
 		};
-		483A2E1B1EA3238E00767AD3 /* MonAnController */ = {
+		023B74D11EA6974300B80505 /* BanAnController */ = {
 			isa = PBXGroup;
 			children = (
-				483A2E1C1EA324C200767AD3 /* manageMonAnController.swift */,
-				483A2E1E1EA3339F00767AD3 /* ManageMonAnCell.swift */,
-				483A2E221EA3344500767AD3 /* manageDetailMonAnController.swift */,
+				023B74D21EA6976400B80505 /* ManageBanAnCell.swift */,
+				023B74D41EA6979000B80505 /* manageBanAnController.swift */,
+				023B74DF1EA773AE00B80505 /* manageDetailBanAnController.swift */,
 			);
-			name = MonAnController;
+			path = BanAnController;
+			sourceTree = "<group>";
+		};
+		023B74DA1EA69B1E00B80505 /* BanAnModel */ = {
+			isa = PBXGroup;
+			children = (
+				023B74DB1EA69B3000B80505 /* BanAnProperties.swift */,
+				023B74DD1EA69B4100B80505 /* BanAnOperators.swift */,
+			);
+			path = BanAnModel;
+			sourceTree = "<group>";
+		};
+		02B435EA1EA5CE2D000371B4 /* MonAnController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MonAnController;
+			sourceTree = "<group>";
+		};
+		02B435EB1EA5CF71000371B4 /* KhuVucModel */ = {
+			isa = PBXGroup;
+			children = (
+				02B435EC1EA5CF87000371B4 /* KhuVucProperties.swift */,
+				023B74CF1EA68C9D00B80505 /* KhuVucOperators.swift */,
+			);
+			path = KhuVucModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +271,7 @@
 				020D7AC81E989270005BC9CB /* LaunchScreen.storyboard in Resources */,
 				020D7AC51E989270005BC9CB /* Assets.xcassets in Resources */,
 				020D7AC31E989270005BC9CB /* Main.storyboard in Resources */,
+				023B74CC1EA6323F00B80505 /* imageUpload in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,16 +282,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023B74DC1EA69B3000B80505 /* BanAnProperties.swift in Sources */,
 				020D7ABE1E989270005BC9CB /* AppDelegate.swift in Sources */,
 				020D7AE21E98D299005BC9CB /* ManageKVCell.swift in Sources */,
+				02B435ED1EA5CF87000371B4 /* KhuVucProperties.swift in Sources */,
+				023B74CE1EA64E4100B80505 /* manageEditKhuVucController.swift in Sources */,
 				020D7ADB1E98CABB005BC9CB /* MainController.swift in Sources */,
+				023B74E01EA773AE00B80505 /* manageDetailBanAnController.swift in Sources */,
+				023B74D51EA6979000B80505 /* manageBanAnController.swift in Sources */,
+				023B74D31EA6976400B80505 /* ManageBanAnCell.swift in Sources */,
+				023B74E21EA7866100B80505 /* RadioButton.swift in Sources */,
+				023B74D01EA68C9D00B80505 /* KhuVucOperators.swift in Sources */,
 				020D7ADD1E98CCFB005BC9CB /* MainCell.swift in Sources */,
-				483A2E1F1EA3339F00767AD3 /* ManageMonAnCell.swift in Sources */,
-				483A2E1D1EA324C200767AD3 /* manageMonAnController.swift in Sources */,
 				020D7AE01E98D223005BC9CB /* manageKhuVucController.swift in Sources */,
+				02091DD61EA4A6AB00A4F4A2 /* UIExtension.swift in Sources */,
 				020D7AE41E98D6D0005BC9CB /* manageDetailKhuVucController.swift in Sources */,
 				020D7AD91E98C859005BC9CB /* DB.swift in Sources */,
-				483A2E231EA3344500767AD3 /* manageDetailMonAnController.swift in Sources */,
+				023B74DE1EA69B4100B80505 /* BanAnOperators.swift in Sources */,
+				02091DD41EA49F7100A4F4A2 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
